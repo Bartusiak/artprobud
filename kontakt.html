@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pl" style="background:#222;">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>ArtProBud - Michał Orczykowski</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link href="css/styles.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <!--[if lt IE 9]>
+    	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+     <![endif]-->
+    
+</head>
+
+<body>
+	
+    <div class="nav navbar-inverse navbar-static-top">
+    	<div class="container">
+        	<a class="navbar-brand" ></a>
+        	
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+            	<span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <div class = "collapse navbar-collapse navHeaderCollapse">
+            	<ul class = "nav navbar-nav navbar-right">
+                	<li><a href="glowna2.html">STRONA GŁÓWNA</a></li>
+                	<li><a href="firma.html">O FIRMIE</a></li>
+                	<li><a href="galeria.html">GALERIA</a></li>
+                    <li><a href="cennik.html">CENNIK</a></li>
+                    <li class="active"><a href="kontakt.html">KONTAKT</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron jumbotron-sm" style="background-image:url(img/pasek.jpg);height:100px;padding-top:10px;padding-bottom:10px;margin-bottom:0px;">
+    	<div class="container">
+    		<div class="row">
+            	<div class="col-sm-12 col-lg-12">
+            		<h1 class="h2k" style="color: white;">
+                    	Kontakt <small><small> Skontaktuj się z nami !</small> </small>
+                    </h1>
+                </div>
+            </div>
+    	</div>
+    </div>
+	<div class="kontakt_dol" style="background:#222;padding-top:30px;">
+	<div class="container"  >
+    	<div class="row">
+        	<div class="col-md-12 ">
+            	<div class="col-md-4 ">
+            		<form>
+                        <legend style="font-family:'Source Sans Pro', sans-serif;color:white; "><strong>ArtProBud  -  Michał Orczykowski </strong> </legend>
+                        <address style="color:white;">
+                        Miejscowosc,ulica nr<br>
+						Kod pocztowy<br>
+                        Telefon:000000000
+                        </address>
+                        
+                        <address style="color:white;">
+                        	<strong>Adres Email</strong><br>
+                        	<a href="mailto:#">podajemail@domena.pl</a>
+                        </address>
+                       
+                    </form>
+                </div>
+                		<div class="col-md-8">	
+                        	<div class="well well-sm" style="background:#222;">
+                				<form>
+                                	<div class="row">
+                                    	<div class="col-md-4">
+                                        	<div class="form-group" >
+                                            	<label for="imie" style="color:white;">Imię</label>
+                                                <input type="text" class="form-control" id="imie" placeholder="Podaj imię" required />
+                                             </div>
+                                            <div class="form-group">
+                                            	<label for="nazwisko" style="color:white;">Nazwisko</label>
+                                                <input type="text" class="form-control" id="nazwisko" placeholder="Podaj swoje nazwisko" required /> 
+                                        	</div>
+                                            <div class="form-group">
+                                            <label for="mail"  style="color:white;">Adres Email</label>
+                                            <input type="email" class="form-control" id="mail" placeholder="Podaj swój adres email" required/>
+                                            </div>
+                                            <div class="form-group">
+                                             	<label for="nr" style="color:white;">Telefon</label>
+                                               	<input type="tel" class="form-control" id="nr" placeholder="Podaj numer telefonu" />
+                                            </div>
+                                        </div>
+                                     	<div class="col-md-6">
+                                        	<div class="form-group">
+                                            	<label for="wiadomosc" style="color:white;">Wiadomość</label>
+                                                <textarea name="wiadomosc" id="wiadomosc" class="form-control" rows="9" cols="25" required placeholder="Napisz do Nas wiadomość"></textarea> 
+                                            </div>
+                                        </div><br>
+
+                                        <div class="col-md-12">
+                                        	<button type="submit" class="btn btn-primary pull-right" id="btnKontakt">Wyślij</button>
+                               				
+                                        </div>
+                                    </div>
+                                    
+                        		</form>
+                		</div>	
+                	</div>
+            	</div>
+        	</div>
+        </div>
+    </div>
+	</div>
+
+
+
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script> 
+	
+</body>
+</html>

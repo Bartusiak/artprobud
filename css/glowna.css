@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* Proste multimedia dla układu elastycznego
+   Uwaga: multimedia w układzie elastycznym wymagają usunięcia atrybutów wysokości i szerokości obiektu multimedialnego z kodu HTML.
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* Przeglądarka IE 6 nie obsługuje właściwości "max-width", zatem domyślna szerokość = 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Właściwości układu elastycznej siatki programu Dreamweaver
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiracja: "Responsive Web Design" (autor: Ethan Marcotte) 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	oraz układ Golden Grid System (autor: Joni Korpi)
+	http://goldengridsystem.com/
+*/
+
+/* Układ na telefony: szerokość 480 px i mniejsza. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+/* Układ na tablety: szerokość od 481 px do 768 px. Dziedziczenie stylów z układu na telefony. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+}
+
+/* Układ na komputer: od 769 px do maksimum 1232 px. Dziedziczenie stylów z układów na telefony i tablety. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+}

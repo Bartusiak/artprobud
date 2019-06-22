@@ -1,0 +1,104 @@
+.kolumna1{
+	background:#CC0;
+}
+
+.kolumna2{
+	background:#FC0;
+}
+.html{
+	background:#222;
+}
+.jumbotron{	
+	padding-left: 15px;
+	
+}
+.jumbotron-sm { 
+	padding-top: 24px;
+	padding-bottom: 24px; 
+}
+.jumbotron small {
+	color:#666;
+}
+.navbar-brand{
+	position: relative;
+    background-image: url(../img/logo3.png);
+    width: 160px;
+	max-height: 70px;
+	padding-bottom:20px;
+}
+.carousel-inner{
+	
+	margin-right:auto;
+	position:inherit;
+	width:100%;
+	max-height:550px;
+}
+.carousel{
+	
+	padding:5px;
+	background:#222;	
+}
+.carousel-caption h2{
+	animation-delay: 1s;	
+}
+.carousel-caption h4{
+	animation-delay: 1s;	
+}
+.blackimg{
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height:100%;
+	width:100%;
+	opacity:1;
+	transition: .5s ease;
+	background-color:#111;	
+}
+.item-img:hover .blackimg{
+	opacity:0;
+}
+.item-img:hover .text{
+	opacity:0.9;
+}
+.text{
+	opacity:0;
+	color:white;
+	font-size: 16px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	
+}
+.marg{
+	margin-bottom: 10px;
+}
+.expanded{
+	width:100%;
+	padding:0;
+}
+.body{
+	background:#262;
+}
+.contact{
+	color:white;
+	font-family: 'Bree Serif', serif;
+	text-align:center;
+	margin-top:10px;
+	margin-right:auto;
+	margin-left:auto;
+}
+.h2k{
+	font-family: 'Roboto Slab', serif;
+	
+}
+.zdj{
+	width:100%
+}
+/**
+.menu{
+	background:rgb(255,255,204);
+}
+**/
